@@ -1,0 +1,7 @@
+panda
+epitech
+rust
+macos
+linux
+windows
+shell
