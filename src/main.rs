@@ -6,8 +6,9 @@ fn main() {
     let args_len = args.len();
 
     if args_len == 1 {
-        println!("No arguments provided");
+        eprintln!("Usage: <path-to-wordlist>");
         return;
     }
-
+    let word: String = open_file::open_file(&args[1]).unwrap();
+    println!("{}", word);
 }
