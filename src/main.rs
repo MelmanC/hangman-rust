@@ -1,5 +1,6 @@
 use std::env;
 mod open_file;
+mod game;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -10,5 +11,5 @@ fn main() {
         return;
     }
     let word: String = open_file::open_file(&args[1]).unwrap();
-    println!("{}", word);
+    game::game(&word);
 }
